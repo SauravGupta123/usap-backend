@@ -15,14 +15,14 @@ const sendMail = async (user) => {
   const capitalizedFirstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
   console.log("Sending mail to: ", email);
   
-  const emailSubject = "Welcome to Indian Student Assistance Portal France (ISAP-France)";
+  const emailSubject = "Welcome to Universal Student Assistance Portal France (USAP)";
   const message = `Dear ${capitalizedFirstName},\n
-  Welcome to ISAP-France! We are excited to have you on board.\n
-  Your ISAP-France membership ID is: ${ISAFid}\n
-  Please join our WhatsApp community: https://chat.whatsapp.com/JcvqATdPKPaJDCkKRhDz7w\n
+  Welcome to USAP We are excited to have you on board.\n
+  Your USAP membership ID is: ${ISAFid}\n
+  You can now access your dashboard and explore the various services we offer.\n
   If you have any questions or need assistance, please don't hesitate to reach out to our support team.\n
   Best regards,
-  Team ISAP-France`;
+  Team USAP`;
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
@@ -57,7 +57,7 @@ const sendMailToAdmin = async (user, request) => {
     <p>${message}</p>
     <p>Please address this request as soon as possible.</p>
     <p><a href="https://isafrance.org/admin/login/" target="_blank">Click here to view the request</a></p>
-    <p>Best regards,<br>Team ISAP</p>
+    <p>Best regards,<br>Team USAP</p>
   `;
 
   const mailOptions = {
@@ -95,8 +95,8 @@ const sendRequestResolvedMail = async (user, request) => {
   <p>To help us improve our services, we kindly request that you provide your feedback through the dashboard:</p>
   <p><a href="https://isafrance.org/login" target="_blank" style="color: #1a73e8;">Click here to access your dashboard</a></p>
   <p>Please join our WhatsApp community: <a href="https://chat.whatsapp.com/JcvqATdPKPaJDCkKRhDz7w" target="_blank">Click here to join</a></p>
-  <p>Thank you for choosing ISAP-France! If you have any further questions or need assistance, feel free to reach out.</p>
-  <p>Best regards,<br>Team ISAP-France</p>
+  <p>Thank you for choosing USAP If you have any further questions or need assistance, feel free to reach out.</p>
+  <p>Best regards,<br>Team USAP</p>
 `;
 
   const mailOptions = {

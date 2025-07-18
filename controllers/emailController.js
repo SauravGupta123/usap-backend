@@ -41,7 +41,7 @@ const sendOtp = async (req, res) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: email,
-    subject: 'Email Verification for Indian Students Asssistance Portal (ISAP)',
+    subject: 'Email Verification for Universal Students Asssistance Portal (USAP)',
     text: `Your OTP for email verification is: ${otp}.please do not share this OTP with anyone.`
   };
 
@@ -76,7 +76,7 @@ const forgotPassword = async (req, res) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: email,
-    subject: 'Reset Password for ISAP Account',
+    subject: 'Reset Password for USAP Account',
     text: `Your OTP is: ${otp}. please do not share this OTP with anyone.`
   };
 

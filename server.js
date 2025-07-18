@@ -87,7 +87,7 @@ app.use(passport.session());
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("Welcome to ISAP!");
+  res.send("Welcome to USAP!");
   res.status(200);
 });
 // app.use("/auth", authRoute); //google Auth

@@ -32,7 +32,7 @@ const generateISAFid = async (countryResiding, membershipType) => {
     }
 
     // Generate new ISAF ID with the incremented sequence
-    const newId = `ISAP${currentYear}${countryCode}${memberTypeCode}${sequence.toString().padStart(4, '0')}`;
+    const newId = `USAP${currentYear}${countryCode}${memberTypeCode}${sequence.toString().padStart(4, '0')}`;
     
     return newId;
 
